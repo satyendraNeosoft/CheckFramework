@@ -14,4 +14,5 @@ Pod::Spec.new do |spec|
 spec.source_files  = "CheckFramework/**/*.{swift}"
   spec.swift_versions = "5.0"
     spec.dependency 'Alamofire', '~> 5.4'
+    
 end
