@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CheckFramework"
-  spec.version      = "1.0.0"
+  spec.version      = "0.0.2"
   spec.summary      = "This is the best framework ever"
   spec.description  = "Framework for testing purpose i have used for help others"
   spec.homepage     = "https://github.com/satyendraNeosoft/CheckFramework"
