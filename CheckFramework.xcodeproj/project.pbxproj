@@ -10,6 +10,7 @@
 		92B9A1E32702EFA100D19179 /* CheckFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B9A1D92702EFA100D19179 /* CheckFramework.framework */; };
 		92B9A1E82702EFA100D19179 /* CheckFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B9A1E72702EFA100D19179 /* CheckFrameworkTests.swift */; };
 		92B9A1EA2702EFA100D19179 /* CheckFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B9A1DC2702EFA100D19179 /* CheckFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92B9A1F42702F26B00D19179 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B9A1F32702F26B00D19179 /* CommonFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		92B9A1E22702EFA100D19179 /* CheckFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B9A1E72702EFA100D19179 /* CheckFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFrameworkTests.swift; sourceTree = "<group>"; };
 		92B9A1E92702EFA100D19179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B9A1F32702F26B00D19179 /* CommonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		92B9A1DB2702EFA100D19179 /* CheckFramework */ = {
 			isa = PBXGroup;
 			children = (
+				92B9A1F32702F26B00D19179 /* CommonFunctions.swift */,
 				92B9A1DC2702EFA100D19179 /* CheckFramework.h */,
 				92B9A1DD2702EFA100D19179 /* Info.plist */,
 			);
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					92B9A1D82702EFA100D19179 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					92B9A1E12702EFA100D19179 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B9A1F42702F26B00D19179 /* CommonFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		92B9A1EE2702EFA100D19179 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bhati.app.CheckFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		92B9A1EF2702EFA100D19179 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		92B9A1F12702EFA100D19179 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CheckFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		92B9A1F22702EFA100D19179 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CheckFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
