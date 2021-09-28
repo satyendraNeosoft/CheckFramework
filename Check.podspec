@@ -13,4 +13,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/satyendraNeosoft/CheckFramework.git", :tag => spec.version.to_s }
 spec.source_files  = "CheckFramework/**/*.{swift}"
   spec.swift_versions = "5.0"
+    spec.dependency 'Alamofire', '~> 5.4'
 end

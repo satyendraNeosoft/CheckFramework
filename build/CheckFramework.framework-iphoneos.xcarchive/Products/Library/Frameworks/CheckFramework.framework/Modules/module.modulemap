@@ -1,0 +1,11 @@
+framework module CheckFramework {
+  umbrella header "CheckFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module CheckFramework.Swift {
+    header "CheckFramework-Swift.h"
+    requires objc
+}
