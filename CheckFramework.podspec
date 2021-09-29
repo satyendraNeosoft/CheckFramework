@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
 spec.name         = "CheckFramework"
-spec.version      = "0.1.2"
+spec.version      = "0.1.3"
 spec.summary      = "This is the best framework ever"
 spec.description  = "Framework for testing purpose i have used for help others"
 spec.homepage     = "https://github.com/satyendraNeosoft/CheckFramework"
@@ -14,6 +14,7 @@ spec.source       = { :git => "https://github.com/satyendraNeosoft/CheckFramewor
 spec.source_files  = "CheckFramework/**/*.{swift}"
 spec.swift_versions = "5.0"
 spec.dependency 'Alamofire', '~> 5.4'
-spec.dependency 'SDWebImage', '~> 5.0'
+spec.dependency 'SDWebImage'
+spec.dependency 'Moya'
 
 end
